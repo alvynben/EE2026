@@ -1,0 +1,269 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date             : Sun Apr  3 20:25:47 2022
+| Host             : LAPTOP-LBPU650A running 64-bit major release  (build 9200)
+| Command          : report_power -file Top_Student_power_routed.rpt -pb Top_Student_power_summary_routed.pb -rpx Top_Student_power_routed.rpx
+| Design           : Top_Student
+| Device           : xc7a35tcpg236-1
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 0.093        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 0.021        |
+| Device Static (W)        | 0.072        |
+| Effective TJA (C/W)      | 5.0          |
+| Max Ambient (C)          | 84.5         |
+| Junction Temperature (C) | 25.5         |
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++-------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
++-------------------------+-----------+----------+-----------+-----------------+
+| Clocks                  |     0.006 |        3 |       --- |             --- |
+| Slice Logic             |     0.003 |     3877 |       --- |             --- |
+|   LUT as Logic          |     0.002 |     1345 |     20800 |            6.47 |
+|   CARRY4                |    <0.001 |      202 |      8150 |            2.48 |
+|   Register              |    <0.001 |     1725 |     41600 |            4.15 |
+|   LUT as Shift Register |    <0.001 |      104 |      9600 |            1.08 |
+|   F7/F8 Muxes           |    <0.001 |       31 |     32600 |            0.10 |
+|   Others                |     0.000 |      138 |       --- |             --- |
+|   BUFG                  |     0.000 |        2 |        32 |            6.25 |
+| Signals                 |     0.005 |     2725 |       --- |             --- |
+| Block RAM               |     0.005 |        3 |        50 |            6.00 |
+| DSPs                    |     0.002 |        2 |        90 |            2.22 |
+| I/O                     |    <0.001 |       41 |       106 |           38.68 |
+| Static Power            |     0.072 |          |           |                 |
+| Total                   |     0.093 |          |           |                 |
++-------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |     0.031 |       0.021 |      0.010 |
+| Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
+| Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.001 |       0.000 |      0.000 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                             |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                                    |
+| Clock nodes activity        | Medium     | More than 5% of clocks are missing user specification  | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
+| Device models               | High       | Device models are Production                           |                                                                                                                    |
+|                             |            |                                                        |                                                                                                                    |
+| Overall confidence level    | Low        |                                                        |                                                                                                                    |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 5.0                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 4.6                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------------+-------------+-----------------+
+| Clock       | Domain      | Constraint (ns) |
++-------------+-------------+-----------------+
+| sys_clk_pin | basys_clock |            10.0 |
++-------------+-------------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++-----------------------------------------------------------------------------------------------------+-----------+
+| Name                                                                                                | Power (W) |
++-----------------------------------------------------------------------------------------------------+-----------+
+| Top_Student                                                                                         |     0.021 |
+|   audioCapture                                                                                      |    <0.001 |
+|   clock_20kHz                                                                                       |    <0.001 |
+|   clock_6_25MHz                                                                                     |    <0.001 |
+|   fft1                                                                                              |     0.016 |
+|     ampl                                                                                            |    <0.001 |
+|       U0                                                                                            |    <0.001 |
+|         inst_blk_mem_gen                                                                            |    <0.001 |
+|           gnbram.gnativebmg.native_blk_mem_gen                                                      |    <0.001 |
+|             valid.cstr                                                                              |    <0.001 |
+|               ramloop[0].ram.r                                                                      |    <0.001 |
+|                 prim_noinit.ram                                                                     |    <0.001 |
+|     fft                                                                                             |     0.015 |
+|       U0                                                                                            |     0.015 |
+|         i_synth                                                                                     |     0.015 |
+|           axi_wrapper                                                                               |     0.001 |
+|             config_channel_fifo                                                                     |    <0.001 |
+|               gen_non_real_time.data_in_fifo_pt1                                                    |    <0.001 |
+|                 fifo0                                                                               |    <0.001 |
+|             data_in_channel_fifo                                                                    |    <0.001 |
+|               gen_non_real_time.data_in_fifo_pt1                                                    |    <0.001 |
+|                 fifo0                                                                               |    <0.001 |
+|             data_out_channel                                                                        |    <0.001 |
+|               gen_non_real_time.fifo                                                                |    <0.001 |
+|                 fifo0                                                                               |    <0.001 |
+|           xfft_inst                                                                                 |     0.014 |
+|             non_floating_point.arch_e.xfft_inst                                                     |     0.014 |
+|               control                                                                               |     0.002 |
+|                 addr_gen                                                                            |     0.001 |
+|                   io_addr_gen                                                                       |    <0.001 |
+|                     dv_delay                                                                        |    <0.001 |
+|                       no_sclr_lut.real_shift_ram.use_baseblock.not_use_hlutnm_srls.i_shift_ram      |    <0.001 |
+|                         i_bb_inst                                                                   |    <0.001 |
+|                     load_addr_valid_delay                                                           |    <0.001 |
+|                       no_sclr_lut.real_shift_ram.use_baseblock.not_use_hlutnm_srls.i_shift_ram      |    <0.001 |
+|                         i_bb_inst                                                                   |    <0.001 |
+|                     load_finish_delay                                                               |    <0.001 |
+|                       no_sclr_lut.real_shift_ram.use_baseblock.not_use_hlutnm_srls.i_shift_ram      |    <0.001 |
+|                         i_bb_inst                                                                   |    <0.001 |
+|                     same_input_output_order.xk_index_max_delay                                      |    <0.001 |
+|                       no_sclr_lut.real_shift_ram.use_baseblock.not_use_hlutnm_srls.i_shift_ram      |    <0.001 |
+|                         i_bb_inst                                                                   |    <0.001 |
+|                     xn_index_counter_addsub                                                         |    <0.001 |
+|                       i_baseblox.i_baseblox_addsub                                                  |    <0.001 |
+|                         no_pipelining.the_addsub                                                    |    <0.001 |
+|                           i_lut6.i_lut6_addsub                                                      |    <0.001 |
+|                             i_q.i_simple.qreg                                                       |    <0.001 |
+|                   no_cyclic_prefix.n_counter                                                        |    <0.001 |
+|                     n_counter_addsub                                                                |    <0.001 |
+|                       i_baseblox.i_baseblox_addsub                                                  |    <0.001 |
+|                         no_pipelining.the_addsub                                                    |    <0.001 |
+|                           i_lut6.i_lut6_addsub                                                      |    <0.001 |
+|                   run_addr_gen                                                                      |    <0.001 |
+|                     rank_counter_addsub                                                             |    <0.001 |
+|                       i_baseblox.i_baseblox_addsub                                                  |    <0.001 |
+|                         no_pipelining.the_addsub                                                    |    <0.001 |
+|                           i_lut6.i_lut6_addsub                                                      |    <0.001 |
+|                     rotate_all.rotator                                                              |    <0.001 |
+|                       fixed_pt_size.r10.rotator                                                     |    <0.001 |
+|                     run_addr_delay                                                                  |    <0.001 |
+|                     run_addr_valid_delay                                                            |    <0.001 |
+|                       no_sclr_lut.real_shift_ram.use_baseblock.not_use_hlutnm_srls.i_shift_ram      |    <0.001 |
+|                         i_bb_inst                                                                   |    <0.001 |
+|                     run_addr_valid_delay_reset                                                      |    <0.001 |
+|                       no_sclr_lut.real_shift_ram.use_baseblock.not_use_hlutnm_srls.i_shift_ram      |    <0.001 |
+|                         i_bb_inst                                                                   |    <0.001 |
+|                 block_ram_twiddle_gen.bram_twiddle_gen                                              |    <0.001 |
+|                   tw0.twgen0                                                                        |    <0.001 |
+|                 load_begin_delay                                                                    |    <0.001 |
+|                   no_sclr_lut.real_shift_ram.use_baseblock.not_use_hlutnm_srls.i_shift_ram          |    <0.001 |
+|                     i_bb_inst                                                                       |    <0.001 |
+|                 state_machine                                                                       |    <0.001 |
+|                 twiddle_im_delay                                                                    |    <0.001 |
+|                 twiddle_re_delay                                                                    |    <0.001 |
+|               single_channel.datapath                                                               |     0.011 |
+|                 bfly_bottom_delay                                                                   |    <0.001 |
+|                   no_sclr_lut.real_shift_ram.use_baseblock.not_use_hlutnm_srls.i_shift_ram          |    <0.001 |
+|                     i_bb_inst                                                                       |    <0.001 |
+|                 butterfly_inst                                                                      |    <0.001 |
+|                   logic_butterfly.add_i                                                             |    <0.001 |
+|                     adder                                                                           |    <0.001 |
+|                       i_baseblox.i_baseblox_addsub                                                  |    <0.001 |
+|                         no_pipelining.the_addsub                                                    |    <0.001 |
+|                           i_lut6.i_lut6_addsub                                                      |    <0.001 |
+|                             i_q.i_simple.qreg                                                       |    <0.001 |
+|                   logic_butterfly.add_r                                                             |    <0.001 |
+|                     adder                                                                           |    <0.001 |
+|                       i_baseblox.i_baseblox_addsub                                                  |    <0.001 |
+|                         no_pipelining.the_addsub                                                    |    <0.001 |
+|                           i_lut6.i_lut6_addsub                                                      |    <0.001 |
+|                             i_q.i_simple.qreg                                                       |    <0.001 |
+|                 complex_multiplier                                                                  |     0.003 |
+|                   i_cmpy                                                                            |     0.003 |
+|                     four_mult_structure.use_dsp.i_dsp                                               |     0.003 |
+|                       drive_single_outputs.resync_logic                                             |    <0.001 |
+|                         so_start_delay                                                              |    <0.001 |
+|                       re_im                                                                         |     0.002 |
+|                         use_DSP48.qDSP[0].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_im0 |    <0.001 |
+|                         use_DSP48.qDSP[0].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_re0 |    <0.001 |
+|                         use_DSP48.qDSP[0].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_re1 |    <0.001 |
+|                       so_inputs.i_mux                                                               |    <0.001 |
+|                       so_inputs.r_mux                                                               |    <0.001 |
+|                 input_delay_re                                                                      |    <0.001 |
+|                 memory                                                                              |     0.005 |
+|                   blk_ram.dpm_split.two_dpm.use_bram_only.memory_im                                 |     0.003 |
+|                   blk_ram.dpm_split.two_dpm.use_bram_only.memory_re                                 |     0.003 |
+|                 read_bottom_delay                                                                   |    <0.001 |
+|                   no_sclr_lut.real_shift_ram.use_baseblock.not_use_hlutnm_srls.i_shift_ram          |    <0.001 |
+|                     i_bb_inst                                                                       |    <0.001 |
+|                 top_data_im_delay                                                                   |    <0.001 |
+|                 top_data_re_delay                                                                   |    <0.001 |
+|                 write_data_im_mux                                                                   |    <0.001 |
+|                 write_data_re_mux                                                                   |    <0.001 |
+|                 xk_im_mux                                                                           |    <0.001 |
+|                 xk_re_mux                                                                           |    <0.001 |
+|   fft2                                                                                              |     0.001 |
+|   oledController                                                                                    |     0.002 |
+|   oledDisplay                                                                                       |    <0.001 |
+|   volIndicator                                                                                      |    <0.001 |
++-----------------------------------------------------------------------------------------------------+-----------+
+
+

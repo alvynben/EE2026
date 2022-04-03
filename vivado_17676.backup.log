@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Mar 16 00:55:22 2022
+# Process ID: 17676
+# Current directory: C:/Users/User-PC/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3376
+# Log file: C:/Users/User-PC/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/User-PC/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/User-PC/Downloads/Telegram Desktop/oledTaskDay.xpr/SoundDisplay/SoundDisplay.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 840.789 ; gain = 90.375
+update_compile_order -fileset sources_1
+archive_project {C:/Users/User-PC/Downloads/Telegram Desktop/oledTaskDay.xpr/incomplete_cockery.xpr.zip} -temp_dir C:/Users/User-PC/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-17676-DESKTOP-PUST3RQ -force -include_local_ip_cache -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/User-PC/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-17676-DESKTOP-PUST3RQ' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/User-PC/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-17676-DESKTOP-PUST3RQ/PrjAr/_X_'.
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'

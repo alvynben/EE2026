@@ -21,7 +21,7 @@ module Top_Student (
     output J_MIC3_Pin4,         // Connect to this signal from Audio_Capture.v
     input basys_clock,
     input MISO,                 // J_MIC3_Pin3, serial mic input
-    input [3:0] sw,             // Switch 0 to control input to cs
+    input [5:0] sw,             // Switch 0 to control input to cs
     output reg [11:0] led,      // LED Ports on BASYS
     output [7:0] JC,            // Pins for OLED
     input btnC,                 // Reset button for OLED
@@ -106,7 +106,7 @@ module Top_Student (
     .basys_clock(basys_clock),
     .x(x),
     .y(y),
-    .sw(sw[3:0]),
+    .sw(sw[5:0]),
     .vol_led(vol_led),
     .freq_cnts(freq_cnts),
     .frame_begin(frame_begin),

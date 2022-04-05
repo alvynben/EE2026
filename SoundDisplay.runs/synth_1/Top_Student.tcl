@@ -31,6 +31,13 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_output_repo {c:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
+read_mem {
+  {C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/frequency_header.mem}
+  {C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/menu_screen.mem}
+  {C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/vol_stage_1.mem}
+  {C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/vol_stage_3.mem}
+  {C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/vol_stage_2.mem}
+}
 read_verilog -library xil_defaultlib {
   {C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Audio_Capture.v}
   {C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v}
@@ -38,13 +45,14 @@ read_verilog -library xil_defaultlib {
   {C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/freq_to_graph.v}
   {C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/my_clock_module.v}
   {C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/oled_controller.v}
+  {C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/readImage.v}
   {C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/vol_indicator.v}
   {C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v}
 }
-read_ip -quiet {{c:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/ip/xfft_0/xfft_0.xci}}
+read_ip -quiet {{C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/ip/xfft_0/xfft_0.xci}}
 set_property used_in_implementation false [get_files -all {{c:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/ip/xfft_0/xfft_0_ooc.xdc}}]
 
-read_ip -quiet {{c:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/ip/bram_4_fft/bram_4_fft.xci}}
+read_ip -quiet {{C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/ip/bram_4_fft/bram_4_fft.xci}}
 set_property used_in_implementation false [get_files -all {{c:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/ip/bram_4_fft/bram_4_fft_ooc.xdc}}]
 
 # Mark all dcp files as not used in implementation to prevent them from being

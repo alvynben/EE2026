@@ -14,9 +14,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 9092 
+INFO: Helper process launched with PID 20296 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 386.316 ; gain = 99.695
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 386.656 ; gain = 99.969
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'Top_Student' [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:18]
 INFO: [Synth 8-6157] synthesizing module 'flexible_clock_module' [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/my_clock_module.v:38]
@@ -26,10 +26,10 @@ INFO: [Synth 8-6157] synthesizing module 'Audio_Capture' [C:/Users/junki/Downloa
 INFO: [Synth 8-6155] done synthesizing module 'Audio_Capture' (2#1) [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Audio_Capture.v:25]
 INFO: [Synth 8-6157] synthesizing module 'fast_fourier_transform' [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/fast_fourier_transform.v:23]
 	Parameter max_addresses bound to: 1023 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'bram_4_fft' [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.runs/synth_1/.Xil/Vivado-27532-LAPTOP-LBPU650A/realtime/bram_4_fft_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'bram_4_fft' (3#1) [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.runs/synth_1/.Xil/Vivado-27532-LAPTOP-LBPU650A/realtime/bram_4_fft_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'xfft_0' [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.runs/synth_1/.Xil/Vivado-27532-LAPTOP-LBPU650A/realtime/xfft_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'xfft_0' (4#1) [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.runs/synth_1/.Xil/Vivado-27532-LAPTOP-LBPU650A/realtime/xfft_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bram_4_fft' [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.runs/synth_1/.Xil/Vivado-18608-LAPTOP-LBPU650A/realtime/bram_4_fft_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bram_4_fft' (3#1) [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.runs/synth_1/.Xil/Vivado-18608-LAPTOP-LBPU650A/realtime/bram_4_fft_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'xfft_0' [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.runs/synth_1/.Xil/Vivado-18608-LAPTOP-LBPU650A/realtime/xfft_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'xfft_0' (4#1) [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.runs/synth_1/.Xil/Vivado-18608-LAPTOP-LBPU650A/realtime/xfft_0_stub.v:6]
 WARNING: [Synth 8-350] instance 'fft' of module 'xfft_0' requires 19 connections, but only 12 given [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/fast_fourier_transform.v:66]
 INFO: [Synth 8-6155] done synthesizing module 'fast_fourier_transform' (5#1) [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/fast_fourier_transform.v:23]
 INFO: [Synth 8-6157] synthesizing module 'freq_to_graph' [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/freq_to_graph.v:23]
@@ -43,7 +43,39 @@ INFO: [Synth 8-6157] synthesizing module 'oled_controller' [C:/Users/junki/Downl
 	Parameter oled_red bound to: 16'b1111100000000000 
 	Parameter oled_black bound to: 16'b0000000000000000 
 	Parameter max_freq bound to: 6'b111001 
-INFO: [Synth 8-6155] done synthesizing module 'oled_controller' (8#1) [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/oled_controller.v:23]
+	Parameter max_vol bound to: 12'b111111111111 
+INFO: [Synth 8-6157] synthesizing module 'readImage' [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/readImage.v:23]
+	Parameter file_name bound to: frequency_header.mem - type: string 
+	Parameter width bound to: 96 - type: integer 
+	Parameter height bound to: 64 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'frequency_header.mem' is read successfully [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/readImage.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'readImage' (8#1) [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/readImage.v:23]
+INFO: [Synth 8-6157] synthesizing module 'readImage__parameterized0' [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/readImage.v:23]
+	Parameter file_name bound to: menu_screen.mem - type: string 
+	Parameter width bound to: 96 - type: integer 
+	Parameter height bound to: 64 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'menu_screen.mem' is read successfully [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/readImage.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'readImage__parameterized0' (8#1) [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/readImage.v:23]
+INFO: [Synth 8-6157] synthesizing module 'readImage__parameterized1' [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/readImage.v:23]
+	Parameter file_name bound to: vol_stage_1.mem - type: string 
+	Parameter width bound to: 96 - type: integer 
+	Parameter height bound to: 64 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'vol_stage_1.mem' is read successfully [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/readImage.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'readImage__parameterized1' (8#1) [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/readImage.v:23]
+INFO: [Synth 8-6157] synthesizing module 'readImage__parameterized2' [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/readImage.v:23]
+	Parameter file_name bound to: vol_stage_2.mem - type: string 
+	Parameter width bound to: 96 - type: integer 
+	Parameter height bound to: 64 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'vol_stage_2.mem' is read successfully [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/readImage.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'readImage__parameterized2' (8#1) [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/readImage.v:23]
+WARNING: [Synth 8-6014] Unused sequential element freq_val_reg[8] was removed.  [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/oled_controller.v:91]
+WARNING: [Synth 8-6014] Unused sequential element freq_val_reg[9] was removed.  [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/oled_controller.v:91]
+WARNING: [Synth 8-6014] Unused sequential element freq_val_reg[10] was removed.  [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/oled_controller.v:91]
+WARNING: [Synth 8-6014] Unused sequential element freq_val_reg[11] was removed.  [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/oled_controller.v:91]
+WARNING: [Synth 8-6014] Unused sequential element freq_val_reg[12] was removed.  [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/oled_controller.v:91]
+WARNING: [Synth 8-6014] Unused sequential element freq_val_reg[13] was removed.  [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/oled_controller.v:91]
+WARNING: [Synth 8-6014] Unused sequential element freq_val_reg[14] was removed.  [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/oled_controller.v:91]
+INFO: [Synth 8-6155] done synthesizing module 'oled_controller' (9#1) [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/oled_controller.v:23]
 INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:36]
 	Parameter Width bound to: 96 - type: integer 
 	Parameter Height bound to: 64 - type: integer 
@@ -98,8 +130,8 @@ INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [C:/Users/junki/Download
 INFO: [Synth 8-226] default block is never used [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:124]
 INFO: [Synth 8-226] default block is never used [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:201]
 WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:349]
-INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (9#1) [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:36]
-INFO: [Synth 8-6155] done synthesizing module 'Top_Student' (10#1) [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (10#1) [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Student' (11#1) [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:18]
 WARNING: [Synth 8-3917] design Top_Student has port dp driven by constant 1
 WARNING: [Synth 8-3331] design oled_controller has unconnected port sw[0]
 WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[464]
@@ -129,6 +161,12 @@ WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[44
 WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[440]
 WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[439]
 WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[438]
+WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[437]
+WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[436]
+WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[435]
+WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[434]
+WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[433]
+WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[432]
 WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[431]
 WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[430]
 WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[429]
@@ -153,6 +191,12 @@ WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[41
 WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[410]
 WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[409]
 WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[408]
+WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[407]
+WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[406]
+WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[405]
+WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[404]
+WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[403]
+WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[402]
 WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[401]
 WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[400]
 WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[399]
@@ -177,33 +221,21 @@ WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[38
 WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[380]
 WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[379]
 WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[378]
+WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[377]
+WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[376]
+WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[375]
+WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[374]
+WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[373]
+WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[372]
 WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[371]
 WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[370]
 WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[369]
 WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[368]
 WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[367]
 WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[366]
-WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[365]
-WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[364]
-WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[363]
-WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[362]
-WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[361]
-WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[360]
-WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[359]
-WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[358]
-WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[357]
-WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[356]
-WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[355]
-WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[354]
-WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[353]
-WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[352]
-WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[351]
-WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[350]
-WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[349]
-WARNING: [Synth 8-3331] design oled_controller has unconnected port freq_cnts[348]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 441.273 ; gain = 154.652
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 457.727 ; gain = 171.039
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -216,10 +248,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 441.273 ; gain = 154.652
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 457.727 ; gain = 171.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 441.273 ; gain = 154.652
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 457.727 ; gain = 171.039
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -239,17 +271,17 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 788.332 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 802.207 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'fft1/ampl' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 789.898 ; gain = 503.277
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 803.465 ; gain = 516.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 789.898 ; gain = 503.277
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 803.465 ; gain = 516.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -257,7 +289,7 @@ Start Applying 'set_property' XDC Constraints
 Applied set_property DONT_TOUCH = true for fft1/fft. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for fft1/ampl. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 789.898 ; gain = 503.277
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 803.465 ; gain = 516.777
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "clk_20kHz0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/fast_fourier_transform.v:114]
@@ -305,8 +337,9 @@ INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Oled_Display'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 789.898 ; gain = 503.277
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 803.465 ; gain = 516.777
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'oledController/nolabel_line63' (readImage__parameterized1) to 'oledController/nolabel_line75'
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -323,7 +356,7 @@ Detailed RTL Component Info :
 	   2 Input     17 Bit       Adders := 1     
 	   2 Input     11 Bit       Adders := 1     
 	   2 Input     10 Bit       Adders := 4     
-	   2 Input      9 Bit       Adders := 15    
+	   2 Input      9 Bit       Adders := 8     
 	   2 Input      6 Bit       Adders := 1     
 +---Registers : 
 	              465 Bit    Registers := 1     
@@ -334,7 +367,7 @@ Detailed RTL Component Info :
 	               11 Bit    Registers := 1     
 	               10 Bit    Registers := 4     
 	                7 Bit    Registers := 1     
-	                6 Bit    Registers := 16    
+	                6 Bit    Registers := 9     
 	                3 Bit    Registers := 1     
 	                1 Bit    Registers := 8     
 +---Muxes : 
@@ -345,9 +378,8 @@ Detailed RTL Component Info :
 	   2 Input     21 Bit        Muxes := 1     
 	  32 Input     20 Bit        Muxes := 1     
 	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 29    
 	   4 Input     16 Bit        Muxes := 1     
-	   2 Input     16 Bit        Muxes := 14    
-	  17 Input     16 Bit        Muxes := 1     
 	   2 Input     11 Bit        Muxes := 4     
 	   2 Input     10 Bit        Muxes := 1     
 	   6 Input      7 Bit        Muxes := 1     
@@ -422,14 +454,13 @@ Detailed RTL Component Info :
 Module oled_controller 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input      9 Bit       Adders := 15    
+	   2 Input      9 Bit       Adders := 8     
 +---Registers : 
 	               16 Bit    Registers := 1     
-	                6 Bit    Registers := 15    
+	                6 Bit    Registers := 8     
 +---Muxes : 
+	   2 Input     16 Bit        Muxes := 29    
 	   4 Input     16 Bit        Muxes := 1     
-	   2 Input     16 Bit        Muxes := 14    
-	  17 Input     16 Bit        Muxes := 1     
 	   2 Input     11 Bit        Muxes := 3     
 Module Oled_Display 
 Detailed RTL Component Info : 
@@ -476,23 +507,13 @@ INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is 
 INFO: [Synth 8-5545] ROM "clock_20kHz/clk_20kHz0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "clock_6_25MHz/clk_20kHz0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 WARNING: [Synth 8-3917] design Top_Student has port dp driven by constant 1
-INFO: [Synth 8-3886] merging instance 'oledController/oled_default_reg[0]' (FD) to 'oledController/oled_default_reg[1]'
-INFO: [Synth 8-3886] merging instance 'oledController/oled_default_reg[1]' (FD) to 'oledController/oled_default_reg[3]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\oledController/oled_default_reg[2] )
-INFO: [Synth 8-3886] merging instance 'oledController/oled_default_reg[3]' (FD) to 'oledController/oled_default_reg[4]'
-INFO: [Synth 8-3886] merging instance 'oledController/oled_default_reg[5]' (FD) to 'oledController/oled_default_reg[6]'
-INFO: [Synth 8-3886] merging instance 'oledController/oled_default_reg[6]' (FD) to 'oledController/oled_default_reg[7]'
-INFO: [Synth 8-3886] merging instance 'oledController/oled_default_reg[9]' (FD) to 'oledController/oled_default_reg[10]'
-INFO: [Synth 8-3886] merging instance 'oledController/oled_default_reg[11]' (FD) to 'oledController/oled_default_reg[12]'
-INFO: [Synth 8-3886] merging instance 'oledController/oled_default_reg[12]' (FD) to 'oledController/oled_default_reg[14]'
-INFO: [Synth 8-3886] merging instance 'oledController/oled_default_reg[14]' (FD) to 'oledController/oled_default_reg[15]'
 INFO: [Synth 8-3886] merging instance 'volIndicator/vol_led_reg[5]' (FDR) to 'volIndicator/vol_led_reg[6]'
 INFO: [Synth 8-3886] merging instance 'volIndicator/vol_led_reg[6]' (FDR) to 'volIndicator/vol_led_reg[7]'
 INFO: [Synth 8-3886] merging instance 'volIndicator/vol_led_reg[7]' (FDR) to 'volIndicator/vol_led_reg[8]'
 INFO: [Synth 8-3886] merging instance 'volIndicator/vol_led_reg[8]' (FDR) to 'volIndicator/vol_led_reg[9]'
 INFO: [Synth 8-3886] merging instance 'volIndicator/vol_led_reg[9]' (FDR) to 'volIndicator/vol_led_reg[10]'
 INFO: [Synth 8-3886] merging instance 'volIndicator/vol_led_reg[10]' (FDR) to 'volIndicator/vol_led_reg[11]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\volIndicator/vol_led_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (volIndicator/\vol_led_reg[11] )
 INFO: [Synth 8-3886] merging instance 'volIndicator/seg_reg[0]' (FD) to 'volIndicator/seg_reg[3]'
 INFO: [Synth 8-3886] merging instance 'led_reg[5]' (FD) to 'led_reg[6]'
 INFO: [Synth 8-3886] merging instance 'led_reg[6]' (FD) to 'led_reg[7]'
@@ -501,109 +522,130 @@ INFO: [Synth 8-3886] merging instance 'led_reg[8]' (FD) to 'led_reg[9]'
 INFO: [Synth 8-3886] merging instance 'led_reg[9]' (FD) to 'led_reg[10]'
 INFO: [Synth 8-3886] merging instance 'led_reg[10]' (FD) to 'led_reg[11]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\led_reg[11] )
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[450]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[449]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[448]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[447]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[446]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[445]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[444]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[443]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[442]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[441]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[440]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[439]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[438]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[431]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[430]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[429]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[428]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[427]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[426]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[425]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[424]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[423]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[422]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[421]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[420]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[419]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[418]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[417]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[416]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[415]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[414]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[413]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[412]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[411]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[410]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[409]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[408]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[401]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[400]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[399]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[398]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[397]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[396]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[395]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[394]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[393]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[392]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[391]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[390]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[389]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[388]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[387]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[386]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[385]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[384]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[383]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[382]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[381]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[380]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[379]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[378]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[371]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[370]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[369]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[368]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[367]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[366]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[365]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[364]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[363]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[362]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[361]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[360]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[359]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[358]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[357]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[356]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[355]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[354]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[353]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[352]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[351]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[350]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[349]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[348]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[341]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[340]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[339]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[338]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[337]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[336]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[335]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[334]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[333]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[332]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[331]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[330]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[329]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[328]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (fft2/freq_cnts_reg[327]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[450]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[449]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[448]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[447]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[446]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[445]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[444]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[443]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[442]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[441]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[440]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[439]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[438]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[437]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[436]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[435]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[434]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[433]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[432]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[431]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[430]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[429]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[428]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[427]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[426]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[425]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[424]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[423]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[422]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[421]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[420]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[419]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[418]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[417]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[416]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[415]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[414]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[413]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[412]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[411]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[410]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[409]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[408]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[407]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[406]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[405]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[404]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[403]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[402]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[401]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[400]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[399]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[398]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[397]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[396]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[395]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[394]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[393]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[392]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[391]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[390]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[389]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[388]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[387]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[386]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[385]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[384]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[383]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[382]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[381]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[380]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[379]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[378]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[377]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[376]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[375]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[374]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[373]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[372]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[371]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[370]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[369]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[368]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[367]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[366]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[365]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[364]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[363]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[362]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[361]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[360]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[359]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[358]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[357]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[356]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[355]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[354]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[353]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[352]) is unused and will be removed from module freq_to_graph.
+WARNING: [Synth 8-3332] Sequential element (freq_cnts_reg[351]) is unused and will be removed from module freq_to_graph.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 789.898 ; gain = 503.277
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:01:04 . Memory (MB): peak = 803.465 ; gain = 516.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++----------------+------------+---------------+----------------+
+|Module Name     | RTL Object | Depth x Width | Implemented As | 
++----------------+------------+---------------+----------------+
+|readImage       | p_0_out    | 8192x16       | LUT            | 
+|readImage       | p_0_out    | 8192x16       | LUT            | 
+|readImage       | p_0_out    | 8192x16       | LUT            | 
+|readImage       | p_0_out    | 8192x16       | LUT            | 
+|oled_controller | p_0_out    | 8192x16       | LUT            | 
+|oled_controller | p_0_out    | 8192x16       | LUT            | 
+|oled_controller | p_0_out    | 8192x16       | LUT            | 
+|oled_controller | p_0_out    | 8192x16       | LUT            | 
++----------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -615,13 +657,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 789.898 ; gain = 503.277
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:11 ; elapsed = 00:01:16 . Memory (MB): peak = 807.250 ; gain = 520.562
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 858.156 ; gain = 571.535
+Finished Timing Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:01:18 . Memory (MB): peak = 833.031 ; gain = 546.344
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -633,7 +675,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 869.930 ; gain = 583.309
+Finished Technology Mapping : Time (s): cpu = 00:01:14 ; elapsed = 00:01:19 . Memory (MB): peak = 855.152 ; gain = 568.465
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -657,7 +699,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 869.930 ; gain = 583.309
+Finished IO Insertion : Time (s): cpu = 00:01:15 ; elapsed = 00:01:20 . Memory (MB): peak = 855.152 ; gain = 568.465
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -670,7 +712,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 869.930 ; gain = 583.309
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:15 ; elapsed = 00:01:20 . Memory (MB): peak = 855.152 ; gain = 568.465
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -682,25 +724,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 869.930 ; gain = 583.309
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:15 ; elapsed = 00:01:20 . Memory (MB): peak = 855.152 ; gain = 568.465
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 869.930 ; gain = 583.309
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:15 ; elapsed = 00:01:20 . Memory (MB): peak = 855.152 ; gain = 568.465
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 869.930 ; gain = 583.309
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:15 ; elapsed = 00:01:20 . Memory (MB): peak = 855.152 ; gain = 568.465
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 869.930 ; gain = 583.309
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:15 ; elapsed = 00:01:20 . Memory (MB): peak = 855.152 ; gain = 568.465
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -721,44 +763,46 @@ Report Cell Usage:
 |1     |bram_4_fft |     1|
 |2     |xfft_0     |     1|
 |3     |BUFG       |     3|
-|4     |CARRY4     |   171|
+|4     |CARRY4     |   126|
 |5     |LUT1       |    59|
-|6     |LUT2       |   362|
-|7     |LUT3       |   120|
-|8     |LUT4       |   130|
-|9     |LUT5       |   190|
-|10    |LUT6       |   317|
-|11    |MUXF7      |     1|
-|12    |FDRE       |   745|
-|13    |FDRE_1     |    31|
-|14    |FDSE_1     |     1|
-|15    |IBUF       |     7|
-|16    |OBUF       |    33|
-|17    |OBUFT      |     1|
+|6     |LUT2       |   253|
+|7     |LUT3       |   145|
+|8     |LUT4       |   118|
+|9     |LUT5       |   231|
+|10    |LUT6       |   594|
+|11    |MUXF7      |    36|
+|12    |MUXF8      |     6|
+|13    |FDRE       |   545|
+|14    |FDRE_1     |    31|
+|15    |FDSE_1     |     1|
+|16    |IBUF       |     9|
+|17    |OBUF       |    33|
+|18    |OBUFT      |     1|
 +------+-----------+------+
 
 Report Instance Areas: 
-+------+-----------------+------------------------+------+
-|      |Instance         |Module                  |Cells |
-+------+-----------------+------------------------+------+
-|1     |top              |                        |  2242|
-|2     |  audioCapture   |Audio_Capture           |    79|
-|3     |  clock_20kHz    |flexible_clock_module   |    54|
-|4     |  clock_6_25MHz  |flexible_clock_module_0 |    53|
-|5     |  fft1           |fast_fourier_transform  |   731|
-|6     |  fft2           |freq_to_graph           |   362|
-|7     |  oledController |oled_controller         |   328|
-|8     |  oledDisplay    |Oled_Display            |   482|
-|9     |  volIndicator   |vol_indicator           |    90|
-+------+-----------------+------------------------+------+
++------+-------------------+------------------------+------+
+|      |Instance           |Module                  |Cells |
++------+-------------------+------------------------+------+
+|1     |top                |                        |  2262|
+|2     |  clock_20kHz      |flexible_clock_module   |    52|
+|3     |  audioCapture     |Audio_Capture           |    65|
+|4     |  clock_6_25MHz    |flexible_clock_module_0 |    52|
+|5     |  fft1             |fast_fourier_transform  |   368|
+|6     |  fft2             |freq_to_graph           |   377|
+|7     |  oledController   |oled_controller         |   650|
+|8     |    nolabel_line51 |readImage               |     2|
+|9     |  oledDisplay      |Oled_Display            |   549|
+|10    |  volIndicator     |vol_indicator           |    93|
++------+-------------------+------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 869.930 ; gain = 583.309
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:15 ; elapsed = 00:01:20 . Memory (MB): peak = 855.152 ; gain = 568.465
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 752 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:44 . Memory (MB): peak = 869.930 ; gain = 234.684
-Synthesis Optimization Complete : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 869.930 ; gain = 583.309
+Synthesis finished with 0 errors, 0 critical warnings and 834 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:59 ; elapsed = 00:01:10 . Memory (MB): peak = 855.152 ; gain = 222.727
+Synthesis Optimization Complete : Time (s): cpu = 00:01:15 ; elapsed = 00:01:21 . Memory (MB): peak = 855.152 ; gain = 568.465
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 211 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 209 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -768,11 +812,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   FDSE_1 => FDSE (inverted pins: C): 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-77 Infos, 208 Warnings, 0 Critical Warnings and 0 Errors encountered.
+80 Infos, 215 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:00:59 . Memory (MB): peak = 869.930 ; gain = 594.812
+synth_design: Time (s): cpu = 00:01:18 ; elapsed = 00:01:24 . Memory (MB): peak = 855.152 ; gain = 579.969
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.runs/synth_1/Top_Student.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Top_Student_utilization_synth.rpt -pb Top_Student_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 869.930 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sun Apr  3 20:23:33 2022...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 855.152 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  5 17:09:19 2022...

@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Sun Apr  3 20:25:47 2022
+| Date             : Tue Apr  5 17:11:25 2022
 | Host             : LAPTOP-LBPU650A running 64-bit major release  (build 9200)
 | Command          : report_power -file Top_Student_power_routed.rpt -pb Top_Student_power_summary_routed.pb -rpx Top_Student_power_routed.rpx
 | Design           : Top_Student
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.093        |
+| Total On-Chip Power (W)  | 0.091        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.021        |
+| Dynamic (W)              | 0.019        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.5         |
@@ -52,21 +52,21 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.006 |        3 |       --- |             --- |
-| Slice Logic             |     0.003 |     3877 |       --- |             --- |
-|   LUT as Logic          |     0.002 |     1345 |     20800 |            6.47 |
-|   CARRY4                |    <0.001 |      202 |      8150 |            2.48 |
-|   Register              |    <0.001 |     1725 |     41600 |            4.15 |
+| Clocks                  |     0.005 |        3 |       --- |             --- |
+| Slice Logic             |     0.003 |     3896 |       --- |             --- |
+|   LUT as Logic          |     0.002 |     1536 |     20800 |            7.38 |
+|   Register              |    <0.001 |     1525 |     41600 |            3.67 |
+|   CARRY4                |    <0.001 |      157 |      8150 |            1.93 |
 |   LUT as Shift Register |    <0.001 |      104 |      9600 |            1.08 |
-|   F7/F8 Muxes           |    <0.001 |       31 |     32600 |            0.10 |
-|   Others                |     0.000 |      138 |       --- |             --- |
+|   F7/F8 Muxes           |    <0.001 |       72 |     32600 |            0.22 |
+|   Others                |     0.000 |      140 |       --- |             --- |
 |   BUFG                  |     0.000 |        2 |        32 |            6.25 |
-| Signals                 |     0.005 |     2725 |       --- |             --- |
+| Signals                 |     0.004 |     2834 |       --- |             --- |
 | Block RAM               |     0.005 |        3 |        50 |            6.00 |
 | DSPs                    |     0.002 |        2 |        90 |            2.22 |
-| I/O                     |    <0.001 |       41 |       106 |           38.68 |
+| I/O                     |    <0.001 |       43 |       106 |           40.57 |
 | Static Power            |     0.072 |          |           |                 |
-| Total                   |     0.093 |          |           |                 |
+| Total                   |     0.091 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -76,7 +76,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.031 |       0.021 |      0.010 |
+| Vccint    |       1.000 |     0.028 |       0.018 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -145,11 +145,11 @@ Table of Contents
 +-----------------------------------------------------------------------------------------------------+-----------+
 | Name                                                                                                | Power (W) |
 +-----------------------------------------------------------------------------------------------------+-----------+
-| Top_Student                                                                                         |     0.021 |
+| Top_Student                                                                                         |     0.019 |
 |   audioCapture                                                                                      |    <0.001 |
 |   clock_20kHz                                                                                       |    <0.001 |
 |   clock_6_25MHz                                                                                     |    <0.001 |
-|   fft1                                                                                              |     0.016 |
+|   fft1                                                                                              |     0.015 |
 |     ampl                                                                                            |    <0.001 |
 |       U0                                                                                            |    <0.001 |
 |         inst_blk_mem_gen                                                                            |    <0.001 |
@@ -157,9 +157,9 @@ Table of Contents
 |             valid.cstr                                                                              |    <0.001 |
 |               ramloop[0].ram.r                                                                      |    <0.001 |
 |                 prim_noinit.ram                                                                     |    <0.001 |
-|     fft                                                                                             |     0.015 |
-|       U0                                                                                            |     0.015 |
-|         i_synth                                                                                     |     0.015 |
+|     fft                                                                                             |     0.014 |
+|       U0                                                                                            |     0.014 |
+|         i_synth                                                                                     |     0.014 |
 |           axi_wrapper                                                                               |     0.001 |
 |             config_channel_fifo                                                                     |    <0.001 |
 |               gen_non_real_time.data_in_fifo_pt1                                                    |    <0.001 |
@@ -170,8 +170,8 @@ Table of Contents
 |             data_out_channel                                                                        |    <0.001 |
 |               gen_non_real_time.fifo                                                                |    <0.001 |
 |                 fifo0                                                                               |    <0.001 |
-|           xfft_inst                                                                                 |     0.014 |
-|             non_floating_point.arch_e.xfft_inst                                                     |     0.014 |
+|           xfft_inst                                                                                 |     0.013 |
+|             non_floating_point.arch_e.xfft_inst                                                     |     0.013 |
 |               control                                                                               |     0.002 |
 |                 addr_gen                                                                            |     0.001 |
 |                   io_addr_gen                                                                       |    <0.001 |
@@ -249,8 +249,8 @@ Table of Contents
 |                       so_inputs.r_mux                                                               |    <0.001 |
 |                 input_delay_re                                                                      |    <0.001 |
 |                 memory                                                                              |     0.005 |
-|                   blk_ram.dpm_split.two_dpm.use_bram_only.memory_im                                 |     0.003 |
-|                   blk_ram.dpm_split.two_dpm.use_bram_only.memory_re                                 |     0.003 |
+|                   blk_ram.dpm_split.two_dpm.use_bram_only.memory_im                                 |     0.002 |
+|                   blk_ram.dpm_split.two_dpm.use_bram_only.memory_re                                 |     0.002 |
 |                 read_bottom_delay                                                                   |    <0.001 |
 |                   no_sclr_lut.real_shift_ram.use_baseblock.not_use_hlutnm_srls.i_shift_ram          |    <0.001 |
 |                     i_bb_inst                                                                       |    <0.001 |
@@ -260,8 +260,9 @@ Table of Contents
 |                 write_data_re_mux                                                                   |    <0.001 |
 |                 xk_im_mux                                                                           |    <0.001 |
 |                 xk_re_mux                                                                           |    <0.001 |
-|   fft2                                                                                              |     0.001 |
-|   oledController                                                                                    |     0.002 |
+|   fft2                                                                                              |    <0.001 |
+|   oledController                                                                                    |    <0.001 |
+|     nolabel_line51                                                                                  |     0.000 |
 |   oledDisplay                                                                                       |    <0.001 |
 |   volIndicator                                                                                      |    <0.001 |
 +-----------------------------------------------------------------------------------------------------+-----------+

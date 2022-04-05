@@ -75,8 +75,8 @@ set rc [catch {
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_MEMORY [current_project]
   add_files -quiet {{C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.runs/synth_1/Top_Student.dcp}}
-  read_ip -quiet {{c:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/ip/xfft_0/xfft_0.xci}}
-  read_ip -quiet {{c:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/ip/bram_4_fft/bram_4_fft.xci}}
+  read_ip -quiet {{C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/ip/xfft_0/xfft_0.xci}}
+  read_ip -quiet {{C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/ip/bram_4_fft/bram_4_fft.xci}}
   read_xdc {{C:/Users/junki/Downloads/Telegram Desktop/incomplete_cockery.xpr/SoundDisplay/SoundDisplay.srcs/constrs_1/new/Basys3_Master.xdc}}
   link_design -top Top_Student -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
